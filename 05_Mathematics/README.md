@@ -8,6 +8,7 @@ Mathematical foundations essential for computer science, from discrete mathemati
 ## Course Structure
 
 ### [5.1 Discrete Mathematics & Logic](./5.1_Discrete_Math_and_Logic/)
+- Asymptotic growth intuition (ties to **3.1** Big-O; formal **P / NP / NP-completeness** in **[12.2](../12_Theory_of_Computer_Science/12.2_Computability_and_Complexity/)**)
 - Propositions and logical operators
 - De Morgan's Laws and truth tables
 - Tautology and contradiction

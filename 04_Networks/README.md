@@ -27,10 +27,12 @@ Comprehensive study materials covering computer networking from physical layer t
 - IPv4 addressing and subnetting
 - Subnet masks and CIDR notation
 - IPv4 header structure and fields
+- **IPv6** basics (address length, notation, dual-stack with IPv4)
 - Routing tables and forwarding decisions
 - Default gateway and next hop
 - ICMP (Ping, Traceroute)
-- NAT (Network Address Translation)
+- ICMPv6 and neighbor discovery (high level, pairs with IPv6)
+- NAT (Network Address Translation); NPT/NAT64 awareness (optional)
 
 ### [4.4 Transport Layer](./4.4_Transport_Layer/)
 - Port numbers and sockets
@@ -46,6 +48,8 @@ Comprehensive study materials covering computer networking from physical layer t
 ### [4.5 Application Layer](./4.5_Application_Layer/)
 - DNS (Hierarchy, queries, record types)
 - HTTP/HTTPS (Methods, status codes, headers)
+- **HTTP/2** (multiplexing, server push awareness) and **HTTP/3 / QUIC** (UDP-based, TLS 1.3 integration — conceptual)
+- **WebSocket** vs long polling / SSE (when to use which)
 - TLS/SSL and certificates
 - Email protocols (SMTP, POP3, IMAP)
 - Remote access (Telnet, SSH)
@@ -58,6 +62,7 @@ Comprehensive study materials covering computer networking from physical layer t
 - Certificates and PKI
 - Common attacks (MITM, DoS, SQL Injection, XSS, CSRF)
 - Firewall and VPN
+- **Application-layer security** (OWASP-style topics in depth): **[10_Application_Security](../10_Application_Security/)**
 
 ## Study Approach
 1. Understand **layered architecture** concept

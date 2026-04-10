@@ -10,6 +10,7 @@ Comprehensive study materials covering fundamental operating system concepts, fr
 - Thread fundamentals
 - Process/Thread creation and termination
 - fork(), pthread_create(), exit(), wait()
+- **Inter-process communication (IPC)**: pipes, FIFOs, shared memory, message queues, signals (overview)
 
 ### [1.2 CPU Scheduling](./1.2_CPU_Scheduling/)
 - CPU scheduler concepts
@@ -21,12 +22,14 @@ Comprehensive study materials covering fundamental operating system concepts, fr
 - Virtual memory (Paging, Segmentation, TLB)
 - Page replacement algorithms (FIFO, LRU, LFU, Optimal)
 - Memory allocation strategies
+- **Thrashing** and **working set** model (why RAM pressure hurts performance)
 
 ### [1.4 Synchronization & Mutual Exclusion](./1.4_Synchronization/)
 - Critical section and race conditions
 - Mutex (Spinlock vs Sleep lock)
 - Semaphore (Binary, Counting)
 - Advanced synchronization (Barrier, RW Lock, Atomic ops)
+- **Memory visibility and ordering** (happens-before, barriers) — ties to concurrent programming interviews
 
 ### [1.5 Deadlock](./1.5_Deadlock/)
 - Necessary conditions (4 conditions)
@@ -49,15 +52,7 @@ Comprehensive study materials covering fundamental operating system concepts, fr
 - User space vs Kernel space
 - System call interface
 - Major subsystems (Scheduler, Memory Manager, VFS, Network Stack)
+- **cgroups** and **namespaces** (Linux containers); hands-on Docker/Kubernetes → **[11.2 Docker & Kubernetes](../11_Cloud_and_Operations/11.2_Docker_and_Kubernetes/)**
 
-## Study Approach
-1. Read through each topic's README for an overview
-2. Take detailed notes in the topic's directory
-3. Complete practice problems
-4. Build projects to apply concepts
-
-## Legacy Directories
-- `notes/` - General study notes
-- `resources/` - Books, papers, and reference materials
-- `exercises/` - Cross-topic exercises
-- `projects/` - Implementation projects
+## Study approach
+Use the repo-wide [how-to](../README.md#how-to-use-this-repository). For this track, pair each chapter README with small runnable examples (`fork`, pthreads, syscall tracing) when possible.

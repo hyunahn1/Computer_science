@@ -7,7 +7,7 @@ Comprehensive study materials covering fundamental data structures and algorithm
 
 ### [3.1 Basic Data Structures](./3.1_Basic_Structures/)
 - Data structure selection criteria (3 factors)
-- Big-O notation and complexity analysis
+- Big-O notation and complexity analysis (formal complexity classes: **[12.2](../12_Theory_of_Computer_Science/12.2_Computability_and_Complexity/)**)
 - Array vs Linked List trade-offs
 - Cache locality advantages
 - Dynamic array resizing (amortized O(1))
@@ -50,12 +50,14 @@ Comprehensive study materials covering fundamental data structures and algorithm
 - Stable vs Unstable sorting
 - Binary search and variants (Lower/Upper bound)
 - Hash collision resolution (Chaining, Open addressing)
+- **String pattern matching**: KMP, Rabin-Karp (and rolling hash intuition)
 - Tim Sort hybrid approach
 - External sorting for large data
 - Quick Select for k-th element
 - Sorting lower bound proof
 
 ### [3.5 Graph Algorithms & Advanced Topics](./3.5_Graph_and_Advanced/)
+- **Cache / eviction design**: LRU, LFU — map to data structures (hash map + doubly linked list, heaps, frequency lists)
 - Graph representations (Matrix vs List)
 - DFS and BFS traversals
 - Shortest path (Dijkstra, Bellman-Ford, Floyd-Warshall)

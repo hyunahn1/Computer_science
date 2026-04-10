@@ -11,6 +11,7 @@ Comprehensive study materials covering computer architecture, digital logic, mic
 - Pipeline techniques and hazards
 - Branch prediction
 - Cache coherence (MESI protocol)
+- **Memory consistency & ordering** (weak vs strong models, fences) — links to **1.4** and concurrent software on multicore CPUs
 - Interrupt handling and DMA
 - ARM-specific features (modes, register banking, CPSR)
 - MMU vs MPU
