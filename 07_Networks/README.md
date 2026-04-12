@@ -49,7 +49,8 @@ Comprehensive study materials covering computer networking from physical layer t
 - DNS (Hierarchy, queries, record types)
 - HTTP/HTTPS (Methods, status codes, headers)
 - **HTTP/2** (multiplexing, server push awareness) and **HTTP/3 / QUIC** (UDP-based, TLS 1.3 integration — conceptual)
-- **WebSocket** vs long polling / SSE (when to use which)
+- **Real-time Communication**: WebSocket vs long polling, SSE (Server-Sent Events), WebRTC
+- **RPC Frameworks**: gRPC, Protocol Buffers (Protobuf)
 - TLS/SSL and certificates
 - Email protocols (SMTP, POP3, IMAP)
 - Remote access (Telnet, SSH)

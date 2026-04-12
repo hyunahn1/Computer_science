@@ -5,12 +5,12 @@ Comprehensive study materials covering computer architecture, digital logic, mic
 
 ## Course Structure
 
-### [2.1 CPU Architecture & Logic](./2.1_CPU_Architecture/)
+### [3.1 CPU Architecture & Logic](./3.1_CPU_Architecture/)
 - Von Neumann vs Harvard architecture
 - RISC vs CISC (ARM vs x86)
-- Pipeline techniques and hazards
-- Branch prediction
-- Cache coherence (MESI protocol)
+- **Advanced CPU Performance**: Pipelining and Out-of-Order Execution, pipeline hazards
+- **Branch prediction** (its impact on algorithm performance)
+- **Cache coherence (MESI protocol)** and hardware consistency
 - **Memory consistency & ordering** (weak vs strong models, fences) — links to **1.4** and concurrent software on multicore CPUs
 - Interrupt handling and DMA
 - ARM-specific features (modes, register banking, CPSR)

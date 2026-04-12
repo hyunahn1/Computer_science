@@ -22,19 +22,20 @@ The full map of tracks lives **only here**; individual `README.md` files under e
 
 | # | Folder | Focus |
 |---|--------|--------|
-| 1 | [01_Operating_Systems](./01_Operating_Systems/) | Processes, memory, FS, sync, I/O, Linux kernel |
-| 2 | [02_Computer_Architecture](./02_Computer_Architecture/) | CPU, logic, MCU, RTOS, toolchain |
-| 3 | [03_Data_Structures_and_Algorithms](./03_Data_Structures_and_Algorithms/) | DS&A, complexity, strings, graphs |
-| 4 | [04_Networks](./04_Networks/) | Layers, TCP/IP, HTTP, DNS |
-| 5 | [05_Mathematics](./05_Mathematics/) | Discrete math, crypto math, LA, calc, probability |
-| 6 | [06_Databases](./06_Databases/) | SQL, transactions, indexes, replication, NoSQL |
-| 7 | [07_System_Design_and_Distributed_Systems](./07_System_Design_and_Distributed_Systems/) | Scale, cache, consistency, messaging, APIs |
-| 8 | [08_Software_Engineering](./08_Software_Engineering/) | Testing, CI/CD, quality, refactoring |
-| 9 | [09_Programming_Languages_and_Runtime](./09_Programming_Languages_and_Runtime/) | Execution, memory, types, concurrency in PLs |
-| 10 | [10_Application_Security](./10_Application_Security/) | OWASP, auth, secure coding |
-| 11 | [11_Cloud_and_Operations](./11_Cloud_and_Operations/) | Cloud models, Docker/Kubernetes, observability |
-| 12 | [12_Theory_of_Computer_Science](./12_Theory_of_Computer_Science/) | Automata, computability, P/NP |
-| 13 | [13_Developer_Tools_and_Workflow](./13_Developer_Tools_and_Workflow/) | Git, shell/regex, debug/profile |
+| 00 | [00_Developer_Tools_and_Workflow](./00_Developer_Tools_and_Workflow/) | Git, shell/regex, debug/profile |
+| 01 | [01_Mathematics](./01_Mathematics/) | Discrete math, crypto math, LA, calc, probability |
+| 02 | [02_Data_Structures_and_Algorithms](./02_Data_Structures_and_Algorithms/) | DS&A, complexity, strings, graphs |
+| 03 | [03_Computer_Architecture](./03_Computer_Architecture/) | CPU, logic, MCU, RTOS, toolchain |
+| 04 | [04_Theory_of_Computer_Science](./04_Theory_of_Computer_Science/) | Automata, computability, P/NP |
+| 05 | [05_Operating_Systems](./05_Operating_Systems/) | Processes, memory, FS, sync, I/O, Linux kernel |
+| 06 | [06_Programming_Languages_and_Compilers](./06_Programming_Languages_and_Compilers/) | Execution, memory, types, concurrency, COMPILERS |
+| 07 | [07_Networks](./07_Networks/) | Layers, TCP/IP, HTTP, DNS |
+| 08 | [08_Databases](./08_Databases/) | SQL, transactions, indexes, replication, NoSQL |
+| 09 | [09_Application_Security](./09_Application_Security/) | OWASP, auth, secure coding |
+| 10 | [10_Software_Engineering_and_Architecture](./10_Software_Engineering_and_Architecture/) | Testing, CI/CD, quality, refactoring, DESIGN PATTERNS |
+| 11 | [11_System_Design_and_Distributed_Systems](./11_System_Design_and_Distributed_Systems/) | Scale, cache, consistency, messaging, APIs |
+| 12 | [12_Cloud_and_Operations](./12_Cloud_and_Operations/) | Cloud models, Docker/Kubernetes, observability |
+| 13 | [13_Artificial_Intelligence_and_Machine_Learning](./13_Artificial_Intelligence_and_Machine_Learning/) | Machine Learning, Deep Learning, MLOps |
 
 ### Chapters per track (quick map)
 

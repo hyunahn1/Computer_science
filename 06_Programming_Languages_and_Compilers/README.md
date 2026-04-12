@@ -8,6 +8,7 @@ How programs are executed and organized at runtime: compilation vs interpretatio
 ### [9.1 Execution Models](./9.1_Execution_Models/)
 - Compilation, interpretation, JIT (high level)
 - Frontend vs backend of a compiler (lexer, parser, IR)
+- **Advanced Compiler Theory**: AST (Abstract Syntax Tree), IR (Intermediate Representation like LLVM IR)
 - Linking and dynamic libraries (intuition)
 
 ### [9.2 Memory & Runtime Layout](./9.2_Memory_and_Runtime_Layout/)
@@ -15,6 +16,7 @@ How programs are executed and organized at runtime: compilation vs interpretatio
 - Call stack, stack frames, stack overflow
 - Heap allocation, fragmentation (conceptual)
 - Garbage collection: tracing, generations, stop-the-world (language-agnostic)
+- **Advanced GC Algorithms**: Tri-color marking, G1GC, ZGC (Concurrent & parallel collection)
 - Manual memory: RAII, smart pointers (if applicable to your stack)
 
 ### [9.3 Type Systems](./9.3_Type_Systems/)
