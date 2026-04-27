@@ -1,4 +1,4 @@
-# 5.4 Calculus & Numerical Methods
+# 1.4 Calculus & Numerical Methods
 
 *Focus on practical applications in computer science and engineering*
 
@@ -198,3 +198,12 @@ y = y₁ + (y₂ - y₁) × (x - x₁)/(x₂ - x₁)
 - [ ] Explain convolution in CNN context
 - [ ] Derive linear regression closed-form solution
 - [ ] Calculate numerical derivative/integral
+
+## Expert Depth Checklist
+- [ ] State formal definitions precisely and list the assumptions under which they hold.
+- [ ] Prove at least one nontrivial theorem, identity, or algorithmic property from this chapter.
+- [ ] Work through concrete examples by hand before using software or calculators.
+- [ ] Connect the concept to a CS application: algorithms, cryptography, graphics, ML, control, or systems.
+- [ ] Identify a common misconception and provide a counterexample.
+- [ ] Implement or simulate one small example when the topic is computational.
+- [ ] Cite a textbook-quality source and distinguish intuition from formal proof.

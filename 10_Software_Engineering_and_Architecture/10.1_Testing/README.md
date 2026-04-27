@@ -1,4 +1,4 @@
-# 8.1 Testing
+# 10.1 Testing
 
 ## Levels
 - Unit: fast, isolated, many
@@ -29,3 +29,11 @@
 ## Practice Problems
 - [ ] Choose test level for: password hasher, payment adapter, login page
 - [ ] Design tests for retry logic with clock control
+
+## Expert Depth Checklist
+- [ ] Tie every practice to risk reduction: correctness, maintainability, operability, delivery speed, or team coordination.
+- [ ] Use a real or toy codebase to demonstrate the technique rather than only defining it.
+- [ ] Compare alternatives and state the cost of overengineering.
+- [ ] Write evidence: tests, CI output, review checklist, ADR, refactoring steps, or defect analysis.
+- [ ] Identify failure modes: flaky tests, brittle mocks, unsafe deploys, dependency cycles, unclear ownership, or architectural drift.
+- [ ] Explain how the practice changes under small project, large team, regulated system, and high-availability service constraints.

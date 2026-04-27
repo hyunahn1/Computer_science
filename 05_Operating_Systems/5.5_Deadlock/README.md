@@ -1,4 +1,4 @@
-# 1.5 Deadlock
+# 5.5 Deadlock
 
 ## Deadlock Necessary Conditions
 All four conditions must hold for deadlock to occur:
@@ -79,3 +79,11 @@ All four conditions must hold for deadlock to occur:
 - [ ] Apply Banker's algorithm
 - [ ] Design deadlock-free systems
 - [ ] Analyze real-world deadlocks
+
+## Expert Depth Checklist
+- [ ] Trace the kernel/user boundary for the topic: syscall, trap, interrupt, scheduler, page fault, VFS, or driver path.
+- [ ] Explain the invariant the OS maintains and what breaks if it is violated.
+- [ ] Reproduce behavior with a small C program, shell experiment, `strace`, `perf`, `/proc`, or debugger output.
+- [ ] Analyze concurrency and failure: race, deadlock, starvation, priority inversion, lost wakeup, or crash consistency bug.
+- [ ] Compare policy vs mechanism and explain which part is configurable.
+- [ ] Read at least one authoritative source: OSTEP, Linux man pages, kernel docs, or OS textbook chapter.

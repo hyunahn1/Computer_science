@@ -1,4 +1,4 @@
-# 3.3 Trees & Heaps
+# 2.3 Trees & Heaps
 
 ## Tree Fundamentals
 
@@ -339,3 +339,12 @@ Node* invert(Node* root) {
 - [ ] Invert binary tree
 - [ ] Check if tree is balanced
 - [ ] Build tree from inorder + preorder
+
+## Expert Depth Checklist
+- [ ] Prove correctness using an invariant, induction, exchange argument, or cut property where appropriate.
+- [ ] Derive time and space complexity, including worst case, amortized case, and hidden constants when relevant.
+- [ ] Implement the core algorithm or data structure without relying on library shortcuts.
+- [ ] Test edge cases: empty input, duplicate keys, adversarial ordering, overflow, recursion depth, and memory pressure.
+- [ ] Compare competing approaches and state when each one wins in practice.
+- [ ] Explain cache locality, allocation behavior, and stack usage when they affect real performance.
+- [ ] Solve at least three problems that require recognizing the pattern rather than copying the algorithm.

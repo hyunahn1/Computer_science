@@ -1,4 +1,4 @@
-# 4.1 Network Fundamentals
+# 7.1 Network Fundamentals
 
 ## OSI 7-Layer Model
 
@@ -295,3 +295,11 @@ Physical:    [Bits on wire]
 - [ ] Trace a packet from application to physical layer
 - [ ] Why do we need layered architecture?
 - [ ] What happens when you type a URL in browser? (all layers)
+
+## Expert Depth Checklist
+- [ ] Trace a packet or request across layers, naming headers, addresses, state transitions, and failure points.
+- [ ] Capture evidence with Wireshark, `tcpdump`, `dig`, `curl`, `ss`, `traceroute`, or equivalent tools.
+- [ ] Explain latency, bandwidth, loss, retransmission, congestion, and queueing effects quantitatively.
+- [ ] Read relevant RFC sections for the protocol instead of relying only on summaries.
+- [ ] Diagnose a realistic failure: DNS issue, MTU problem, TCP reset, TLS error, routing loop, or application timeout.
+- [ ] Compare security properties and threat models at the appropriate layer.

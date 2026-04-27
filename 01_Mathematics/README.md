@@ -7,8 +7,8 @@ Mathematical foundations essential for computer science, from discrete mathemati
 
 ## Course Structure
 
-### [5.1 Discrete Mathematics & Logic](./5.1_Discrete_Math_and_Logic/)
-- Asymptotic growth intuition (ties to **3.1** Big-O; formal **P / NP / NP-completeness** in **[12.2](../12_Theory_of_Computer_Science/12.2_Computability_and_Complexity/)**)
+### [1.1 Discrete Mathematics & Logic](./1.1_Discrete_Math_and_Logic/)
+- Asymptotic growth intuition (ties to **2.1** Big-O; formal **P / NP / NP-completeness** in **[4.2](../04_Theory_of_Computer_Science/4.2_Computability_and_Complexity/)**)
 - Propositions and logical operators
 - De Morgan's Laws and truth tables
 - Tautology and contradiction
@@ -23,7 +23,7 @@ Mathematical foundations essential for computer science, from discrete mathemati
 - Combinatorics (permutation vs combination)
 - Binomial theorem and Pascal's triangle
 
-### [5.2 Number Theory & Cryptography](./5.2_Number_Theory_and_Cryptography/)
+### [1.2 Number Theory & Cryptography](./1.2_Number_Theory_and_Cryptography/)
 - Prime numbers and factorization
 - GCD/LCM and Euclidean algorithm
 - Modular arithmetic and congruence
@@ -39,7 +39,7 @@ Mathematical foundations essential for computer science, from discrete mathemati
 - Fast exponentiation
 - Gray code
 
-### [5.3 Linear Algebra](./5.3_Linear_Algebra/)
+### [1.3 Linear Algebra](./1.3_Linear_Algebra/)
 - Scalars vs vectors
 - Dot product (projection, orthogonality)
 - Cross product (normal vectors)
@@ -55,7 +55,7 @@ Mathematical foundations essential for computer science, from discrete mathemati
 - 2D rotation matrix
 - Quaternions (solving gimbal lock)
 
-### [5.4 Calculus & Numerical Methods](./5.4_Calculus_and_Numerical_Methods/)
+### [1.4 Calculus & Numerical Methods](./1.4_Calculus_and_Numerical_Methods/)
 - Limits and derivatives
 - Integration (area under curve)
 - Chain rule (backpropagation)
@@ -72,7 +72,7 @@ Mathematical foundations essential for computer science, from discrete mathemati
 - Convolution
 - Linear regression and gradient descent
 
-### [5.5 Probability & Statistics](./5.5_Probability_and_Statistics/)
+### [1.5 Probability & Statistics](./1.5_Probability_and_Statistics/)
 - Probability vs statistics
 - Conditional probability
 - Bayes' Theorem
@@ -180,3 +180,20 @@ Mathematical foundations essential for computer science, from discrete mathemati
 ---
 
 *Remember: Mathematics is a tool, not an obstacle. Focus on understanding concepts and their applications in solving real problems.*
+
+## Advanced Topics to Add
+
+- Discrete math: proof by contradiction, strong induction, invariants, recurrence solving, generating functions.
+- Number theory: modular inverses, primitive roots, finite fields, elliptic curves, cryptographic assumptions.
+- Linear algebra: LU/QR/SVD, conditioning, orthogonality, spectral theorem, PCA derivation.
+- Calculus/numerics: convexity, constrained optimization, numerical stability, error bounds, gradient methods.
+- Probability/statistics: concentration bounds, Bayesian inference, hypothesis testing rigor, estimation bias/variance.
+
+## Expert Depth Checklist
+- [ ] State formal definitions precisely and list the assumptions under which they hold.
+- [ ] Prove at least one nontrivial theorem, identity, or algorithmic property from this chapter.
+- [ ] Work through concrete examples by hand before using software or calculators.
+- [ ] Connect the concept to a CS application: algorithms, cryptography, graphics, ML, control, or systems.
+- [ ] Identify a common misconception and provide a counterexample.
+- [ ] Implement or simulate one small example when the topic is computational.
+- [ ] Cite a textbook-quality source and distinguish intuition from formal proof.

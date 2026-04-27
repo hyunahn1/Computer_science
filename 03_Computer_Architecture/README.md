@@ -16,7 +16,7 @@ Comprehensive study materials covering computer architecture, digital logic, mic
 - ARM-specific features (modes, register banking, CPSR)
 - MMU vs MPU
 
-### [2.2 Digital Logic & Hardware Fundamentals](./2.2_Digital_Logic/)
+### [3.2 Digital Logic & Hardware Fundamentals](./3.2_Digital_Logic/)
 - Pull-up/Pull-down resistors and floating states
 - Open drain vs Push-pull outputs
 - Setup time, hold time, and metastability
@@ -27,7 +27,7 @@ Comprehensive study materials covering computer architecture, digital logic, mic
 - Clock generation (Crystal, Oscillator, PLL)
 - Signal integrity and impedance matching
 
-### [2.3 Microcontroller & Peripherals](./2.3_MCU_Peripherals/)
+### [3.3 Microcontroller & Peripherals](./3.3_MCU_Peripherals/)
 - Timer and counter fundamentals
 - Watchdog timer operation
 - Interrupt controller (NVIC)
@@ -39,7 +39,7 @@ Comprehensive study materials covering computer architecture, digital logic, mic
 - Bootloader and dual bank firmware
 - Startup code and initialization
 
-### [2.4 Real-Time Operating System (RTOS)](./2.4_RTOS/)
+### [3.4 Real-Time Operating System (RTOS)](./3.4_RTOS/)
 - RTOS vs GPOS differences
 - Hard vs Soft real-time
 - Task states and scheduling
@@ -50,7 +50,7 @@ Comprehensive study materials covering computer architecture, digital logic, mic
 - Critical sections and reentrancy
 - RTOS porting considerations
 
-### [2.5 Build, Debug & Toolchain](./2.5_Build_and_Debug/)
+### [3.5 Build, Debug & Toolchain](./3.5_Build_and_Debug/)
 - Cross-compilation and toolchain
 - Build process (preprocessing, compilation, assembly, linking)
 - Linker scripts and memory layout
@@ -69,6 +69,26 @@ Comprehensive study materials covering computer architecture, digital logic, mic
 3. Prepare real-world debugging stories
 4. Understand hardware-software interaction
 5. Practice with oscilloscope and logic analyzer (if available)
+
+## Depth Checklist
+
+Use this track as more than an interview glossary. For each chapter, your detailed notes should answer:
+
+- **Mechanism**: What is the hardware structure, state machine, timing path, or software boundary?
+- **Cost model**: What is the latency, throughput, power, memory, or complexity trade-off?
+- **Measurement**: Which tool would reveal the behavior: `perf`, PMU counters, GDB, `objdump`, logic analyzer, oscilloscope, map file, or trace logs?
+- **Failure mode**: What breaks in the real world: race, metastability, cache miss storm, stack overflow, interrupt latency, priority inversion, linker error, or signal integrity issue?
+- **Architecture contrast**: How does the answer differ on x86, ARM Cortex-A, ARM Cortex-M, and a small MCU without MMU?
+- **Primary source**: Which manual, datasheet, ABI document, or textbook chapter supports your explanation?
+
+## Expert-Level Additions
+
+- CPU microarchitecture: superscalar issue, out-of-order execution, register renaming, reorder buffer, speculative execution, branch predictor families.
+- Memory hierarchy: cache associativity, replacement policy, TLB behavior, prefetching, NUMA awareness, false sharing.
+- Memory consistency: store buffers, acquire/release ordering, fences, x86 TSO vs ARM weak memory ordering.
+- Embedded timing: interrupt latency budget, jitter, DMA/cache coherency, volatile vs memory-mapped I/O barriers.
+- Toolchain rigor: ABI/calling convention, relocation, linker script symbols, startup code, section layout, stack/heap boundaries.
+- Debug evidence: disassembly, map files, hardware watchpoints, ETM/SWO traces, PMU counters, and logic analyzer captures.
 
 ## Interview Preparation
 Each section includes:

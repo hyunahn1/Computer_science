@@ -1,4 +1,4 @@
-# 1.7 I/O & Interrupt
+# 5.7 I/O & Interrupt
 
 ## I/O Methods
 
@@ -115,3 +115,11 @@
 - [ ] Implement interrupt handler
 - [ ] Design DMA controller
 - [ ] Analyze interrupt latency
+
+## Expert Depth Checklist
+- [ ] Trace the kernel/user boundary for the topic: syscall, trap, interrupt, scheduler, page fault, VFS, or driver path.
+- [ ] Explain the invariant the OS maintains and what breaks if it is violated.
+- [ ] Reproduce behavior with a small C program, shell experiment, `strace`, `perf`, `/proc`, or debugger output.
+- [ ] Analyze concurrency and failure: race, deadlock, starvation, priority inversion, lost wakeup, or crash consistency bug.
+- [ ] Compare policy vs mechanism and explain which part is configurable.
+- [ ] Read at least one authoritative source: OSTEP, Linux man pages, kernel docs, or OS textbook chapter.

@@ -1,4 +1,4 @@
-# 3.1 Basic Data Structures (Arrays & Lists)
+# 2.1 Basic Data Structures (Arrays & Lists)
 
 ## Fundamental Considerations
 
@@ -272,3 +272,12 @@ Node* reverse(Node* head) {
 - [ ] Design cache-friendly data structure
 - [ ] Implement stack using two queues
 - [ ] Detect cycle in linked list (Floyd's algorithm)
+
+## Expert Depth Checklist
+- [ ] Prove correctness using an invariant, induction, exchange argument, or cut property where appropriate.
+- [ ] Derive time and space complexity, including worst case, amortized case, and hidden constants when relevant.
+- [ ] Implement the core algorithm or data structure without relying on library shortcuts.
+- [ ] Test edge cases: empty input, duplicate keys, adversarial ordering, overflow, recursion depth, and memory pressure.
+- [ ] Compare competing approaches and state when each one wins in practice.
+- [ ] Explain cache locality, allocation behavior, and stack usage when they affect real performance.
+- [ ] Solve at least three problems that require recognizing the pattern rather than copying the algorithm.

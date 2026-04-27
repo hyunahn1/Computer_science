@@ -1,4 +1,4 @@
-# 5.3 Linear Algebra
+# 1.3 Linear Algebra
 
 *Note: This is a comprehensive overview. For complete mathematical rigor, please refer to dedicated linear algebra textbooks.*
 
@@ -169,3 +169,12 @@ Rotates vector counterclockwise by angle θ
 - [ ] Explain why 4×4 matrices for 3D graphics
 - [ ] Describe gimbal lock and quaternion solution
 - [ ] Find eigenvalues and eigenvectors
+
+## Expert Depth Checklist
+- [ ] State formal definitions precisely and list the assumptions under which they hold.
+- [ ] Prove at least one nontrivial theorem, identity, or algorithmic property from this chapter.
+- [ ] Work through concrete examples by hand before using software or calculators.
+- [ ] Connect the concept to a CS application: algorithms, cryptography, graphics, ML, control, or systems.
+- [ ] Identify a common misconception and provide a counterexample.
+- [ ] Implement or simulate one small example when the topic is computational.
+- [ ] Cite a textbook-quality source and distinguish intuition from formal proof.

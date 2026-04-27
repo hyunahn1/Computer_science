@@ -1,4 +1,4 @@
-# 12.1 Automata & Formal Languages
+# 4.1 Automata & Formal Languages
 
 ## Finite Automata
 - DFA: deterministic transitions
@@ -23,3 +23,11 @@
 ## Practice Problems
 - [ ] Why can't a DFA count unbounded nesting?
 - [ ] Regex in your language: what can it not express?
+
+## Expert Depth Checklist
+- [ ] Write formal definitions before giving intuition.
+- [ ] Construct or transform a machine, grammar, automaton, or reduction by hand.
+- [ ] Prove language membership, non-membership, closure, decidability, or hardness when applicable.
+- [ ] Identify what resource is being bounded: time, space, states, stack, nondeterminism, or oracle access.
+- [ ] Give a counterexample to an overly broad claim.
+- [ ] Connect theory to implementation: regex engines, parsers, type checkers, SAT solvers, or exponential search.

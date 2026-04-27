@@ -1,4 +1,4 @@
-# 2.1 CPU Architecture & Logic
+# 3.1 CPU Architecture & Logic
 
 ## Computer Architecture Models
 
@@ -63,7 +63,39 @@
   - Refetch correct instructions
   - Performance penalty (3-20 cycles)
 
+### Superscalar and Out-of-Order Execution
+- **Superscalar Issue**
+  - Multiple instructions can be issued in one cycle when dependencies and execution units allow it
+  - Throughput is limited by instruction-level parallelism, dependency chains, and resource conflicts
+
+- **Out-of-Order Execution**
+  - CPU may execute later independent instructions before earlier stalled instructions
+  - Preserves architectural state as if instructions retired in program order
+
+- **Core Structures**
+  - Register renaming removes false dependencies (WAR/WAW)
+  - Reservation stations or scheduler queues hold ready operations
+  - Reorder buffer (ROB) commits results in order
+  - Load/store queue tracks memory dependencies
+
+- **Study Target**
+  - Be able to explain why two programs with the same Big-O can differ due to dependency chains, branch predictability, and memory stalls
+
 ## Cache & Memory
+
+### Cache Organization
+- **Cache Line**
+  - Minimum unit moved between memory and cache
+  - Spatial locality helps when nearby data is accessed together
+
+- **Associativity**
+  - Direct-mapped: one possible location, simple but conflict-prone
+  - Set-associative: several possible ways per set
+  - Fully associative: any line can go anywhere, expensive at scale
+
+- **Replacement Policy**
+  - LRU is idealized; hardware often uses approximations
+  - Replacement behavior can change benchmark results even when asymptotic complexity is unchanged
 
 ### Cache Coherence (MESI Protocol)
 - **Multi-core Cache Synchronization**
@@ -71,6 +103,39 @@
   - E (Exclusive): clean, only in this cache
   - S (Shared): clean, may exist in other caches
   - I (Invalid): data is stale
+
+### False Sharing
+- **Definition**
+  - Independent variables on the same cache line cause coherence traffic when different cores write them
+
+- **Why It Matters**
+  - The program has no logical sharing, but the hardware sees cache-line sharing
+  - Can destroy multicore scalability in counters, queues, and per-thread state
+
+- **Required Experiment**
+  - Write a benchmark with adjacent per-thread counters, then add cache-line padding and compare throughput
+
+### Memory Consistency and Ordering
+- **Problem**
+  - Coherence says caches agree on a location; consistency says when writes become visible across locations
+
+- **Key Concepts**
+  - Store buffer, load speculation, compiler reordering, hardware reordering
+  - Acquire/release ordering for synchronization
+  - Memory fences/barriers when ordering must be forced
+
+- **Architecture Contrast**
+  - x86 is relatively strong (TSO-style model)
+  - ARM is weaker and requires more explicit ordering in low-level concurrent code
+
+### TLB and Address Translation
+- **TLB**
+  - Cache for virtual-to-physical translations
+  - TLB misses can dominate performance for pointer-heavy or large-working-set programs
+
+- **Page Size Trade-off**
+  - Larger pages reduce TLB pressure
+  - Smaller pages reduce internal fragmentation and can improve protection granularity
 
 ### Cache Miss Types (3C)
 1. **Compulsory Miss**
@@ -138,6 +203,16 @@
   - Vector/matrix operations
   - DSP applications
   - ARM NEON, x86 SSE/AVX
+
+### Performance Counters
+- **Purpose**
+  - Measure hardware events instead of guessing
+
+- **Examples**
+  - Cycles, instructions retired, branch misses, cache misses, LLC misses, TLB misses
+
+- **Study Target**
+  - For any performance claim, identify which counter would support or falsify it
 
 ## ARM-Specific Architecture
 
@@ -227,6 +302,50 @@
 - **No Address Translation**
   - Only protection, not virtualization
   - Lighter than MMU
+
+## Expert Depth Checklist
+
+### Mechanism
+- [ ] Draw a 5-stage pipeline and annotate structural, data, and control hazards
+- [ ] Explain how register renaming removes WAR/WAW dependencies but not true RAW dependencies
+- [ ] Describe how a ROB lets a CPU execute speculatively while retiring in order
+- [ ] Explain the difference between cache coherence and memory consistency
+- [ ] Trace a virtual memory access through TLB lookup, page table walk, cache lookup, and memory access
+
+### Analysis
+- [ ] Calculate CPI from base CPI, cache miss rate, miss penalty, branch frequency, and misprediction penalty
+- [ ] Compare direct-mapped vs set-associative cache behavior on a concrete address trace
+- [ ] Explain why pointer chasing hurts prefetching and memory-level parallelism
+- [ ] Analyze why false sharing can make a multicore program slower than a single-threaded one
+- [ ] Distinguish algorithmic complexity from microarchitectural performance
+
+### Implementation and Measurement
+- [ ] Write a microbenchmark that demonstrates branch prediction effects
+- [ ] Write a cache locality benchmark comparing array traversal and pointer chasing
+- [ ] Reproduce false sharing and fix it with cache-line padding
+- [ ] Use `perf stat` or equivalent PMU tooling to compare branch misses, cache misses, and instructions retired
+- [ ] Inspect generated assembly for a small C/C++ function and explain calling convention effects
+
+### Architecture Contrast
+- [ ] Compare x86 TSO and ARM weak memory ordering at the level needed for lock-free code
+- [ ] Compare Cortex-A with MMU and Cortex-M with MPU/no MMU
+- [ ] Explain when DMA requires cache maintenance on embedded systems
+- [ ] Explain why `volatile` is not a synchronization primitive for multithreaded code
+- [ ] Explain when memory-mapped I/O needs compiler barriers, CPU barriers, or both
+
+### Failure Modes
+- [ ] Diagnose a branch-heavy benchmark with high branch-miss rate
+- [ ] Diagnose a large-working-set workload with high LLC or TLB misses
+- [ ] Explain a stale device-buffer bug caused by DMA/cache incoherence
+- [ ] Explain a data race that appears only on weakly ordered hardware
+- [ ] Explain a hard fault or protection fault caused by MPU/MMU permissions
+
+### Primary Sources
+- [ ] Read the relevant chapters of Hennessy & Patterson or Bryant/O'Hallaron for pipeline, cache, and virtual memory
+- [ ] Read the ARM Architecture Reference Manual sections on exceptions, barriers, and memory ordering
+- [ ] Read an x86 or Intel/AMD memory ordering reference at least once
+- [ ] Read your target MCU reference manual for interrupt controller, MPU, DMA, and cache behavior
+- [ ] Keep notes that separate textbook models from vendor-specific behavior
 
 ## Interview Practice
 - [ ] Explain pipeline hazards with examples

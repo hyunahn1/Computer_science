@@ -1,4 +1,4 @@
-# 4.4 Transport Layer (TCP & UDP)
+# 7.4 Transport Layer (TCP & UDP)
 
 ## Transport Layer Overview
 
@@ -387,3 +387,11 @@ Sender                          Receiver (Window=1000)
 - [ ] How does TCP detect and handle packet loss?
 - [ ] What is silly window syndrome?
 - [ ] Explain TCP sequence and acknowledgment numbers
+
+## Expert Depth Checklist
+- [ ] Trace a packet or request across layers, naming headers, addresses, state transitions, and failure points.
+- [ ] Capture evidence with Wireshark, `tcpdump`, `dig`, `curl`, `ss`, `traceroute`, or equivalent tools.
+- [ ] Explain latency, bandwidth, loss, retransmission, congestion, and queueing effects quantitatively.
+- [ ] Read relevant RFC sections for the protocol instead of relying only on summaries.
+- [ ] Diagnose a realistic failure: DNS issue, MTU problem, TCP reset, TLS error, routing loop, or application timeout.
+- [ ] Compare security properties and threat models at the appropriate layer.

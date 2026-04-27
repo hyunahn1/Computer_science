@@ -1,4 +1,4 @@
-# 1.4 Synchronization & Mutual Exclusion
+# 5.4 Synchronization & Mutual Exclusion
 
 ## Critical Section Problem
 - **Race Condition**
@@ -97,3 +97,11 @@
 - [ ] Implement synchronization solutions
 - [ ] Identify race conditions
 - [ ] Fix concurrent bugs
+
+## Expert Depth Checklist
+- [ ] Trace the kernel/user boundary for the topic: syscall, trap, interrupt, scheduler, page fault, VFS, or driver path.
+- [ ] Explain the invariant the OS maintains and what breaks if it is violated.
+- [ ] Reproduce behavior with a small C program, shell experiment, `strace`, `perf`, `/proc`, or debugger output.
+- [ ] Analyze concurrency and failure: race, deadlock, starvation, priority inversion, lost wakeup, or crash consistency bug.
+- [ ] Compare policy vs mechanism and explain which part is configurable.
+- [ ] Read at least one authoritative source: OSTEP, Linux man pages, kernel docs, or OS textbook chapter.

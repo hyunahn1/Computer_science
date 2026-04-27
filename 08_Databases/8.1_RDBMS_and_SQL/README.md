@@ -1,4 +1,4 @@
-# 6.1 Relational Model & SQL
+# 8.1 Relational Model & SQL
 
 ## Relational Foundations
 - Tables, rows, columns, schemas
@@ -27,3 +27,11 @@
 ## Practice Problems
 - [ ] Schema design from requirements
 - [ ] Complex join and aggregation queries
+
+## Expert Depth Checklist
+- [ ] Model data formally: keys, constraints, functional dependencies, normalization, and invariants.
+- [ ] Run real queries and inspect `EXPLAIN` or `EXPLAIN ANALYZE` output.
+- [ ] Reproduce a concurrency anomaly or locking behavior with two sessions.
+- [ ] Explain the storage structure involved: heap file, B+tree, WAL, MVCC tuple/version, LSM tree, or replication log.
+- [ ] Compare correctness, latency, throughput, durability, and operational complexity trade-offs.
+- [ ] Read vendor documentation and note where PostgreSQL, MySQL, SQLite, or distributed databases differ.

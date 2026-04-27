@@ -1,4 +1,4 @@
-# 2.5 Build, Debug & Toolchain
+# 3.5 Build, Debug & Toolchain
 
 ## Cross-Compilation
 
@@ -415,3 +415,11 @@ assert(value < MAX_SIZE);
 - [ ] Compare .hex vs .bin formats
 - [ ] Describe hardware vs software breakpoints
 - [ ] Prepare detailed debugging story
+
+## Expert Depth Checklist
+- [ ] Tie every concept to a concrete hardware mechanism: pipeline stage, bus transaction, cache line, register, interrupt, or peripheral block.
+- [ ] Quantify cost: latency, throughput, cycles, memory footprint, power, jitter, or bandwidth.
+- [ ] Use evidence from disassembly, map files, PMU counters, GDB, logic analyzer, oscilloscope, or vendor reference manuals.
+- [ ] Explain at least one real failure mode: race, hard fault, cache incoherence, stack overflow, metastability, or timing violation.
+- [ ] Contrast desktop CPU, Cortex-A, Cortex-M, and small MCU assumptions.
+- [ ] Keep textbook models separate from vendor-specific behavior.

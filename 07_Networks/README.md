@@ -5,7 +5,7 @@ Comprehensive study materials covering computer networking from physical layer t
 
 ## Course Structure
 
-### [4.1 Network Fundamentals](./4.1_Network_Fundamentals/)
+### [7.1 Network Fundamentals](./7.1_Network_Fundamentals/)
 - OSI 7-Layer Model (Physical to Application)
 - TCP/IP 4-Layer Model
 - Data encapsulation process
@@ -13,7 +13,7 @@ Comprehensive study materials covering computer networking from physical layer t
 - Communication types (Unicast, Broadcast, Multicast, Anycast)
 - Network topologies and types (LAN, WAN, MAN)
 
-### [4.2 Physical & Data Link Layer](./4.2_Physical_and_Link_Layer/)
+### [7.2 Physical & Data Link Layer](./7.2_Physical_and_Link_Layer/)
 - Physical layer media (Twisted pair, Coaxial, Fiber optic)
 - Signal encoding and transmission
 - MAC addressing and Ethernet frames
@@ -23,7 +23,7 @@ Comprehensive study materials covering computer networking from physical layer t
 - VLANs (Virtual LANs)
 - ARP (Address Resolution Protocol)
 
-### [4.3 Network Layer (IP)](./4.3_Network_Layer_IP/)
+### [7.3 Network Layer (IP)](./7.3_Network_Layer_IP/)
 - IPv4 addressing and subnetting
 - Subnet masks and CIDR notation
 - IPv4 header structure and fields
@@ -34,7 +34,7 @@ Comprehensive study materials covering computer networking from physical layer t
 - ICMPv6 and neighbor discovery (high level, pairs with IPv6)
 - NAT (Network Address Translation); NPT/NAT64 awareness (optional)
 
-### [4.4 Transport Layer](./4.4_Transport_Layer/)
+### [7.4 Transport Layer](./7.4_Transport_Layer/)
 - Port numbers and sockets
 - UDP (Connectionless, unreliable)
 - TCP (Connection-oriented, reliable)
@@ -45,7 +45,7 @@ Comprehensive study materials covering computer networking from physical layer t
 - Flow control (Sliding window)
 - Congestion control (Slow start, AIMD)
 
-### [4.5 Application Layer](./4.5_Application_Layer/)
+### [7.5 Application Layer](./7.5_Application_Layer/)
 - DNS (Hierarchy, queries, record types)
 - HTTP/HTTPS (Methods, status codes, headers)
 - **HTTP/2** (multiplexing, server push awareness) and **HTTP/3 / QUIC** (UDP-based, TLS 1.3 integration — conceptual)
@@ -56,14 +56,14 @@ Comprehensive study materials covering computer networking from physical layer t
 - Remote access (Telnet, SSH)
 - Cookies and sessions
 
-### [4.6 Network Security](./4.6_Network_Security/)
+### [7.6 Network Security](./7.6_Network_Security/)
 - Symmetric encryption (AES, DES)
 - Asymmetric encryption (RSA, ECC)
 - Digital signatures and hash functions
 - Certificates and PKI
 - Common attacks (MITM, DoS, SQL Injection, XSS, CSRF)
 - Firewall and VPN
-- **Application-layer security** (OWASP-style topics in depth): **[10_Application_Security](../10_Application_Security/)**
+- **Application-layer security** (OWASP-style topics in depth): **[09_Application_Security](../09_Application_Security/)**
 
 ## Study Approach
 1. Understand **layered architecture** concept
@@ -110,3 +110,19 @@ Comprehensive study materials covering computer networking from physical layer t
   3. TLS handshake (HTTPS)
   4. HTTP request/response
   5. HTML parsing and rendering
+
+## Advanced Topics to Add
+
+- Link/network: ARP/NDP, VLANs, MTU, fragmentation, routing tables, BGP awareness.
+- Transport: TCP state machine, congestion control, flow control, retransmission, QUIC design.
+- Application: DNS internals, HTTP caching, HTTP/2 multiplexing, HTTP/3, gRPC, WebSocket, WebRTC.
+- Security: TLS 1.3 handshake, PKI validation, certificate pinning risks, mTLS, VPNs, DoS.
+- Operations: packet captures, latency decomposition, queueing, load balancers, NAT traversal, observability.
+
+## Expert Depth Checklist
+- [ ] Trace a packet or request across layers, naming headers, addresses, state transitions, and failure points.
+- [ ] Capture evidence with Wireshark, `tcpdump`, `dig`, `curl`, `ss`, `traceroute`, or equivalent tools.
+- [ ] Explain latency, bandwidth, loss, retransmission, congestion, and queueing effects quantitatively.
+- [ ] Read relevant RFC sections for the protocol instead of relying only on summaries.
+- [ ] Diagnose a realistic failure: DNS issue, MTU problem, TCP reset, TLS error, routing loop, or application timeout.
+- [ ] Compare security properties and threat models at the appropriate layer.

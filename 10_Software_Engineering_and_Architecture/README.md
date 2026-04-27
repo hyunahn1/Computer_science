@@ -1,7 +1,7 @@
 # Software Engineering
 
 ## Overview
-How professional software is verified, delivered, and maintained: testing, automation, collaboration practices, and safe refactoring. Complements **13_Developer_Tools_and_Workflow** (Git, shell, debuggers).
+How professional software is verified, delivered, and maintained: testing, automation, collaboration practices, and safe refactoring. Complements **00_Developer_Tools_and_Workflow** (Git, shell, debuggers).
 
 ## Course Structure
 
@@ -38,3 +38,19 @@ How professional software is verified, delivered, and maintained: testing, autom
 - Explain how you caught a bug with the right test level
 - Trade-offs of mocking vs integration tests
 - How you would roll out a risky change safely
+
+## Advanced Topics to Add
+
+- Testing: property-based tests, mutation testing, contract tests, test data management, flakiness analysis.
+- Delivery: trunk-based development, feature flags, canary releases, rollback, artifact provenance.
+- Architecture: module boundaries, dependency direction, ADRs, DDD, hexagonal architecture, evolutionary architecture.
+- Code quality: refactoring mechanics, technical debt taxonomy, review strategy, static analysis.
+- Engineering process: observability-driven development, incident reviews, ownership models, socio-technical trade-offs.
+
+## Expert Depth Checklist
+- [ ] Tie every practice to risk reduction: correctness, maintainability, operability, delivery speed, or team coordination.
+- [ ] Use a real or toy codebase to demonstrate the technique rather than only defining it.
+- [ ] Compare alternatives and state the cost of overengineering.
+- [ ] Write evidence: tests, CI output, review checklist, ADR, refactoring steps, or defect analysis.
+- [ ] Identify failure modes: flaky tests, brittle mocks, unsafe deploys, dependency cycles, unclear ownership, or architectural drift.
+- [ ] Explain how the practice changes under small project, large team, regulated system, and high-availability service constraints.

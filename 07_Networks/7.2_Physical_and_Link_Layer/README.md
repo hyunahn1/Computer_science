@@ -1,4 +1,4 @@
-# 4.2 Physical & Data Link Layer
+# 7.2 Physical & Data Link Layer
 
 ## Physical Layer (Layer 1)
 
@@ -317,3 +317,11 @@
 - [ ] How do VLANs work?
 - [ ] Why is minimum Ethernet payload 46 bytes?
 - [ ] Full-duplex vs half-duplex Ethernet
+
+## Expert Depth Checklist
+- [ ] Trace a packet or request across layers, naming headers, addresses, state transitions, and failure points.
+- [ ] Capture evidence with Wireshark, `tcpdump`, `dig`, `curl`, `ss`, `traceroute`, or equivalent tools.
+- [ ] Explain latency, bandwidth, loss, retransmission, congestion, and queueing effects quantitatively.
+- [ ] Read relevant RFC sections for the protocol instead of relying only on summaries.
+- [ ] Diagnose a realistic failure: DNS issue, MTU problem, TCP reset, TLS error, routing loop, or application timeout.
+- [ ] Compare security properties and threat models at the appropriate layer.

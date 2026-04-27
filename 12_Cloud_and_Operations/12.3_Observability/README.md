@@ -1,4 +1,4 @@
-# 11.3 Observability
+# 12.3 Observability
 
 ## Logs
 - Structured JSON vs plain text
@@ -27,3 +27,11 @@
 ## Practice Problems
 - [ ] User says "slow" — which pillar do you check first and why?
 - [ ] Metric cardinality explosion: what causes it?
+
+## Expert Depth Checklist
+- [ ] Explain the control plane and data plane involved in the cloud or orchestration feature.
+- [ ] Deploy or simulate the component and capture observable evidence: logs, metrics, traces, events, manifests, or alerts.
+- [ ] Define SLOs/SLIs and show how the system tells you when they are violated.
+- [ ] Analyze operational failures: bad rollout, resource exhaustion, noisy alert, broken probe, autoscaling lag, or network policy issue.
+- [ ] Compare managed vs self-operated trade-offs in cost, reliability, security, and lock-in.
+- [ ] Record runbook steps for detection, mitigation, rollback, and post-incident prevention.

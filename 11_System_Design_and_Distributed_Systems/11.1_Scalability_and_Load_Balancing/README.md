@@ -1,4 +1,4 @@
-# 7.1 Scalability & Load Balancing
+# 11.1 Scalability & Load Balancing
 
 ## Scaling
 - Vertical scaling: bigger machine limits
@@ -23,3 +23,11 @@
 ## Practice Problems
 - [ ] Design LB strategy for WebSocket-heavy app
 - [ ] Explain when to avoid sticky sessions
+
+## Expert Depth Checklist
+- [ ] State requirements, nonrequirements, workload, latency budget, consistency needs, and failure assumptions before designing.
+- [ ] Draw the data flow and identify every stateful component, queue, cache, and consistency boundary.
+- [ ] Quantify capacity with rough calculations and identify the first bottleneck.
+- [ ] Analyze failure modes: partial outage, retry storm, split brain, stale cache, duplicate delivery, hot partition, or cascading failure.
+- [ ] Compare consistency, availability, cost, latency, and operational complexity trade-offs.
+- [ ] Connect the design to known primitives: quorum, consensus, idempotency, backpressure, leases, logical clocks, or outbox pattern.

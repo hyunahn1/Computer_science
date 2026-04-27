@@ -1,4 +1,4 @@
-# 5.1 Discrete Mathematics & Logic
+# 1.1 Discrete Mathematics & Logic
 
 ## Propositions & Logic
 
@@ -269,3 +269,12 @@
 - [ ] Build truth table for complex expression
 - [ ] Apply Cartesian product to database joins
 - [ ] Prove relation is equivalence relation
+
+## Expert Depth Checklist
+- [ ] State formal definitions precisely and list the assumptions under which they hold.
+- [ ] Prove at least one nontrivial theorem, identity, or algorithmic property from this chapter.
+- [ ] Work through concrete examples by hand before using software or calculators.
+- [ ] Connect the concept to a CS application: algorithms, cryptography, graphics, ML, control, or systems.
+- [ ] Identify a common misconception and provide a counterexample.
+- [ ] Implement or simulate one small example when the topic is computational.
+- [ ] Cite a textbook-quality source and distinguish intuition from formal proof.

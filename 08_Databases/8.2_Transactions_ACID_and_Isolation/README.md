@@ -1,4 +1,4 @@
-# 6.2 Transactions, ACID & Isolation
+# 8.2 Transactions, ACID & Isolation
 
 ## Transactions
 - BEGIN / COMMIT / ROLLBACK semantics
@@ -34,3 +34,11 @@
 ## Practice Problems
 - [ ] Given a bug report, infer likely isolation / locking issue
 - [ ] Choose isolation level for a money transfer scenario
+
+## Expert Depth Checklist
+- [ ] Model data formally: keys, constraints, functional dependencies, normalization, and invariants.
+- [ ] Run real queries and inspect `EXPLAIN` or `EXPLAIN ANALYZE` output.
+- [ ] Reproduce a concurrency anomaly or locking behavior with two sessions.
+- [ ] Explain the storage structure involved: heap file, B+tree, WAL, MVCC tuple/version, LSM tree, or replication log.
+- [ ] Compare correctness, latency, throughput, durability, and operational complexity trade-offs.
+- [ ] Read vendor documentation and note where PostgreSQL, MySQL, SQLite, or distributed databases differ.

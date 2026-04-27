@@ -1,4 +1,4 @@
-# 12.2 Computability & Complexity
+# 4.2 Computability & Complexity
 
 ## Computability
 - Decidable languages vs recognizable
@@ -28,3 +28,11 @@
 ## Practice Problems
 - [ ] Why is "find any solution" often same hardness as "decide existence"?
 - [ ] Is sorting in NP? (trick: be precise about decision vs function problems)
+
+## Expert Depth Checklist
+- [ ] Write formal definitions before giving intuition.
+- [ ] Construct or transform a machine, grammar, automaton, or reduction by hand.
+- [ ] Prove language membership, non-membership, closure, decidability, or hardness when applicable.
+- [ ] Identify what resource is being bounded: time, space, states, stack, nondeterminism, or oracle access.
+- [ ] Give a counterexample to an overly broad claim.
+- [ ] Connect theory to implementation: regex engines, parsers, type checkers, SAT solvers, or exponential search.

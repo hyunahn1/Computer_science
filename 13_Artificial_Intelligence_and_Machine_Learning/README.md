@@ -36,3 +36,20 @@ Foundational and advanced topics in AI, Machine Learning, and Deep Learning. Con
 - Understand the difference between ML and Deep Learning
 - Explain backpropagation to a software engineer
 - Trade-offs between embedding vs fine-tuning for LLMs
+
+## Advanced Topics to Add
+
+- ML theory: empirical risk minimization, bias/variance, regularization, calibration, uncertainty.
+- Optimization: gradient descent variants, initialization, normalization, loss landscapes, numerical stability.
+- Deep learning: CNN/RNN/Transformer mechanics, attention derivation, scaling laws awareness.
+- Data: leakage, sampling bias, labeling quality, train/validation/test discipline, dataset drift.
+- LLM systems: RAG evaluation, embeddings, reranking, prompt injection, hallucination, latency/cost trade-offs.
+- MLOps: experiment tracking, reproducibility, model monitoring, rollback, safety evaluation.
+
+## Expert Depth Checklist
+- [ ] State the statistical assumption, objective function, data distribution, and evaluation target.
+- [ ] Derive or explain the core optimization step rather than treating the model as a black box.
+- [ ] Build a baseline, run an experiment, and report reproducible metrics with a fixed split/seed when possible.
+- [ ] Analyze failure modes: leakage, overfitting, underfitting, class imbalance, hallucination, drift, bias, or unsafe output.
+- [ ] Compare model quality, latency, cost, interpretability, and operational risk.
+- [ ] Read at least one primary paper, textbook chapter, or official framework documentation for the method.

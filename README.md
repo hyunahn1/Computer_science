@@ -39,20 +39,21 @@ The full map of tracks lives **only here**; individual `README.md` files under e
 
 ### Chapters per track (quick map)
 
-- **01** → `1.1` … `1.8` (8) · **02** → `2.1` … `2.5` (5) · **03** → `3.1` … `3.5` (5)  
-- **04** → `4.1` … `4.6` (6) · **05** → `5.1` … `5.5` (5) · **06** → `6.1` … `6.4` (4)  
-- **07** → `7.1` … `7.5` (5) · **08** → `8.1` … `8.3` (3) · **09** → `9.1` … `9.4` (4)  
-- **10** → `10.1` … `10.3` (3) · **11** → `11.1` … `11.3` (3) · **12** → `12.1` … `12.2` (2) · **13** → `13.1` … `13.3` (3)
+- **00** → `0.1` … `0.3` (3) · **01** → `1.1` … `1.5` (5) · **02** → `2.1` … `2.5` (5)
+- **03** → `3.1` … `3.5` (5) · **04** → `4.1` … `4.2` (2) · **05** → `5.1` … `5.8` (8)
+- **06** → `6.1` … `6.4` (4) · **07** → `7.1` … `7.6` (6) · **08** → `8.1` … `8.4` (4)
+- **09** → `9.1` … `9.3` (3) · **10** → `10.1` … `10.4` (4) · **11** → `11.1` … `11.5` (5)
+- **12** → `12.1` … `12.3` (3) · **13** → `13.1` … `13.3` (3)
 
 ---
 
 ## How topics connect (navigation)
 
-- **OS → containers**: cgroups/namespaces (**01** / 1.8) → Docker & Kubernetes (**11** / 11.2).
-- **Network crypto vs app security**: TLS/PKI (**04** / 4.6) ↔ OWASP & APIs (**10**).
-- **DSA ↔ theory**: Big-O (**03**) ↔ P/NP (**12** / 12.2).
-- **DB ↔ system design**: SQL & isolation (**06**) ↔ caching, consistency, messaging (**07**).
-- **Ship code**: tests & CI (**08**) + Git & debug (**13**) + run in cloud (**11**).
+- **OS → containers**: cgroups/namespaces (**05** / 5.8) → Docker & Kubernetes (**12** / 12.2).
+- **Network crypto vs app security**: TLS/PKI (**07** / 7.6) ↔ OWASP & APIs (**09**).
+- **DSA ↔ theory**: Big-O (**02**) ↔ P/NP (**04** / 4.2).
+- **DB ↔ system design**: SQL & isolation (**08**) ↔ caching, consistency, messaging (**11**).
+- **Ship code**: tests & CI (**10**) + Git & debug (**00**) + run in cloud (**12**).
 
 These are reading hints, not a mandatory order.
 
@@ -71,6 +72,19 @@ These are reading hints, not a mandatory order.
 - Write technical notes in **English** when possible (easier to match docs and interviews).
 - Prefer small, updated commits over one-off dumps.
 - Review and refresh **`README.md`** checklists as you finish sections.
+- Treat every checklist item as incomplete until you can do at least two of: derive/prove it, implement it, measure it, debug a failure case, or compare it against a real system.
+
+## Depth standard
+
+A topic is not "done" when you have read a definition. Mark it as solid only when your notes include:
+
+- **Concept**: precise definitions, assumptions, and common misconceptions.
+- **Mechanism**: how it works internally, preferably with diagrams or state transitions.
+- **Proof or analysis**: correctness argument, complexity bound, invariant, or formal trade-off.
+- **Implementation**: a small program, simulation, lab, or reproduction.
+- **Measurement**: benchmark, trace, profiler output, packet capture, query plan, or hardware counter when relevant.
+- **Failure mode**: a bug, outage pattern, security issue, race, anomaly, or edge case.
+- **Primary source**: textbook chapter, RFC, paper, vendor manual, language spec, or official documentation.
 
 ---
 

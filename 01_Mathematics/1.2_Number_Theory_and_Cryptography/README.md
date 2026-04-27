@@ -1,4 +1,4 @@
-# 5.2 Number Theory & Cryptography
+# 1.2 Number Theory & Cryptography
 
 ## Prime Numbers
 
@@ -267,3 +267,12 @@ def binary_to_gray(n):
 - [ ] Understand CRC calculation
 - [ ] Convert binary to Gray code
 - [ ] Explain two's complement representation
+
+## Expert Depth Checklist
+- [ ] State formal definitions precisely and list the assumptions under which they hold.
+- [ ] Prove at least one nontrivial theorem, identity, or algorithmic property from this chapter.
+- [ ] Work through concrete examples by hand before using software or calculators.
+- [ ] Connect the concept to a CS application: algorithms, cryptography, graphics, ML, control, or systems.
+- [ ] Identify a common misconception and provide a counterexample.
+- [ ] Implement or simulate one small example when the topic is computational.
+- [ ] Cite a textbook-quality source and distinguish intuition from formal proof.

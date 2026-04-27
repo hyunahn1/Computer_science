@@ -1,4 +1,4 @@
-# 13.2 Shell & Regular Expressions
+# 0.2 Shell & Regular Expressions
 
 ## Shell
 - Paths, globbing vs regex (different!)
@@ -25,3 +25,11 @@
 ## Practice Problems
 - [ ] Why can catastrophic backtracking happen?
 - [ ] Difference between glob `*.txt` and regex `.*\.txt`
+
+## Expert Depth Checklist
+- [ ] Explain the data model behind the tool, not only the commands: Git objects/refs, shell process model, regex automata, debugger symbols, profiler sampling.
+- [ ] Reproduce a realistic failure: bad rebase, merge conflict, broken pipeline, quoting bug, regex backtracking issue, crash, or performance regression.
+- [ ] Use primary documentation (`git help`, shell manual, debugger docs, profiler docs) and record exact command evidence.
+- [ ] Build one repeatable workflow script with clear error handling, logging, and rollback or recovery notes.
+- [ ] Compare at least two approaches and justify trade-offs in correctness, auditability, speed, and team risk.
+- [ ] Produce a short incident-style note: symptom, hypothesis, command evidence, root cause, fix, and prevention.

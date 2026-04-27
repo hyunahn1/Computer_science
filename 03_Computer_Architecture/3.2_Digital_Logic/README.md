@@ -1,4 +1,4 @@
-# 2.2 Digital Logic & Hardware Fundamentals
+# 3.2 Digital Logic & Hardware Fundamentals
 
 ## Basic Circuit Concepts
 
@@ -285,3 +285,11 @@
 - [ ] Explain metastability and solution
 - [ ] Draw push-pull vs open-drain circuits
 - [ ] Describe setup/hold time violations
+
+## Expert Depth Checklist
+- [ ] Tie every concept to a concrete hardware mechanism: pipeline stage, bus transaction, cache line, register, interrupt, or peripheral block.
+- [ ] Quantify cost: latency, throughput, cycles, memory footprint, power, jitter, or bandwidth.
+- [ ] Use evidence from disassembly, map files, PMU counters, GDB, logic analyzer, oscilloscope, or vendor reference manuals.
+- [ ] Explain at least one real failure mode: race, hard fault, cache incoherence, stack overflow, metastability, or timing violation.
+- [ ] Contrast desktop CPU, Cortex-A, Cortex-M, and small MCU assumptions.
+- [ ] Keep textbook models separate from vendor-specific behavior.

@@ -1,4 +1,4 @@
-# 4.6 Network Security (Fundamentals)
+# 7.6 Network Security (Fundamentals)
 
 ## Cryptography Basics
 
@@ -464,3 +464,11 @@ DENY all other
 - [ ] How does CSRF attack work?
 - [ ] Compare RSA and ECC
 - [ ] Why use both symmetric and asymmetric in HTTPS?
+
+## Expert Depth Checklist
+- [ ] Trace a packet or request across layers, naming headers, addresses, state transitions, and failure points.
+- [ ] Capture evidence with Wireshark, `tcpdump`, `dig`, `curl`, `ss`, `traceroute`, or equivalent tools.
+- [ ] Explain latency, bandwidth, loss, retransmission, congestion, and queueing effects quantitatively.
+- [ ] Read relevant RFC sections for the protocol instead of relying only on summaries.
+- [ ] Diagnose a realistic failure: DNS issue, MTU problem, TCP reset, TLS error, routing loop, or application timeout.
+- [ ] Compare security properties and threat models at the appropriate layer.

@@ -1,4 +1,4 @@
-# 9.4 Concurrency in Languages
+# 6.4 Concurrency in Languages
 
 ## OS vs Language Threads
 - 1:1 kernel threads vs M:N green threads
@@ -24,3 +24,11 @@
 ## Practice Problems
 - [ ] When would async not reduce thread count meaningfully?
 - [ ] Compare mutex vs message passing for shared state
+
+## Expert Depth Checklist
+- [ ] Describe the formal or implementation model: syntax, semantics, type rules, runtime representation, or execution strategy.
+- [ ] Build a small artifact: parser, interpreter, bytecode VM, type checker, allocator experiment, or concurrency demo.
+- [ ] Explain compile-time vs runtime responsibilities and where errors are detected.
+- [ ] Inspect generated IR, bytecode, assembly, or runtime traces when possible.
+- [ ] Compare two languages or runtimes and identify the trade-off, not just the surface syntax.
+- [ ] Document a failure mode: type unsoundness, memory leak, GC pause, data race, deadlock, or event-loop blocking.

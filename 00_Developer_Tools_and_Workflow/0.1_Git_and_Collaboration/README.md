@@ -1,4 +1,4 @@
-# 13.1 Git & Collaboration
+# 0.1 Git & Collaboration
 
 ## Core Objects
 - Blob, tree, commit, ref
@@ -28,3 +28,11 @@
 ## Practice Problems
 - [ ] When is `git revert` preferred over `git reset`?
 - [ ] Recover "lost" commit with reflog (practice in a toy repo)
+
+## Expert Depth Checklist
+- [ ] Explain the data model behind the tool, not only the commands: Git objects/refs, shell process model, regex automata, debugger symbols, profiler sampling.
+- [ ] Reproduce a realistic failure: bad rebase, merge conflict, broken pipeline, quoting bug, regex backtracking issue, crash, or performance regression.
+- [ ] Use primary documentation (`git help`, shell manual, debugger docs, profiler docs) and record exact command evidence.
+- [ ] Build one repeatable workflow script with clear error handling, logging, and rollback or recovery notes.
+- [ ] Compare at least two approaches and justify trade-offs in correctness, auditability, speed, and team risk.
+- [ ] Produce a short incident-style note: symptom, hypothesis, command evidence, root cause, fix, and prevention.

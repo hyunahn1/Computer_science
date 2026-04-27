@@ -1,4 +1,4 @@
-# 4.3 Network Layer (IP)
+# 7.3 Network Layer (IP)
 
 ## IPv4 Fundamentals
 
@@ -352,3 +352,11 @@
 - [ ] Calculate number of usable hosts for /26 network
 - [ ] How does a router make forwarding decision?
 - [ ] Explain fragmentation process
+
+## Expert Depth Checklist
+- [ ] Trace a packet or request across layers, naming headers, addresses, state transitions, and failure points.
+- [ ] Capture evidence with Wireshark, `tcpdump`, `dig`, `curl`, `ss`, `traceroute`, or equivalent tools.
+- [ ] Explain latency, bandwidth, loss, retransmission, congestion, and queueing effects quantitatively.
+- [ ] Read relevant RFC sections for the protocol instead of relying only on summaries.
+- [ ] Diagnose a realistic failure: DNS issue, MTU problem, TCP reset, TLS error, routing loop, or application timeout.
+- [ ] Compare security properties and threat models at the appropriate layer.

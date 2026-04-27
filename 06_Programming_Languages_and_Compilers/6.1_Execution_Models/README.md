@@ -1,4 +1,4 @@
-# 9.1 Execution Models
+# 6.1 Execution Models
 
 ## From Source to Running Program
 - Lexing, parsing, AST
@@ -21,3 +21,11 @@
 ## Practice Problems
 - [ ] Why might startup time differ: interpreted vs JIT vs native?
 - [ ] What is a shared library load failure symptom?
+
+## Expert Depth Checklist
+- [ ] Describe the formal or implementation model: syntax, semantics, type rules, runtime representation, or execution strategy.
+- [ ] Build a small artifact: parser, interpreter, bytecode VM, type checker, allocator experiment, or concurrency demo.
+- [ ] Explain compile-time vs runtime responsibilities and where errors are detected.
+- [ ] Inspect generated IR, bytecode, assembly, or runtime traces when possible.
+- [ ] Compare two languages or runtimes and identify the trade-off, not just the surface syntax.
+- [ ] Document a failure mode: type unsoundness, memory leak, GC pause, data race, deadlock, or event-loop blocking.

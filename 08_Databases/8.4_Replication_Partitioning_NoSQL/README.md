@@ -1,4 +1,4 @@
-# 6.4 Replication, Partitioning & NoSQL
+# 8.4 Replication, Partitioning & NoSQL
 
 ## Replication
 - Goals: availability, read scaling, disaster recovery
@@ -28,3 +28,11 @@
 ## Practice Problems
 - [ ] Where would you accept eventual consistency in a product?
 - [ ] Shard key design for a high-write timeline feed (discussion)
+
+## Expert Depth Checklist
+- [ ] Model data formally: keys, constraints, functional dependencies, normalization, and invariants.
+- [ ] Run real queries and inspect `EXPLAIN` or `EXPLAIN ANALYZE` output.
+- [ ] Reproduce a concurrency anomaly or locking behavior with two sessions.
+- [ ] Explain the storage structure involved: heap file, B+tree, WAL, MVCC tuple/version, LSM tree, or replication log.
+- [ ] Compare correctness, latency, throughput, durability, and operational complexity trade-offs.
+- [ ] Read vendor documentation and note where PostgreSQL, MySQL, SQLite, or distributed databases differ.
